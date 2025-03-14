@@ -182,6 +182,8 @@ Make sure to also install the [Go extension](https://code.visualstudio.com/docs/
 
 This is it for the installation and setup of Go, let's start the course and write our first hello world!
 
+[Back to top](#Table-of-contents)
+
 # Hello World
 
 Let's write our first hello world program, we can start by initializing a module. For that, we can use the `go mod` command.
@@ -240,6 +242,8 @@ Hello World!
 ```
 
 Congratulations, you just wrote your first Go program!
+
+[Back to top](#Table-of-contents)
 
 # Variables and Data Types
 
@@ -538,6 +542,8 @@ func main() {
 
 As we can see, we cannot use the defined type interchangeably with the underlying type, unlike _alias types_.
 
+[Back to top](#Table-of-contents)
+
 # String Formatting
 
 In this tutorial, we will learn about string formatting or sometimes also known as templating.
@@ -666,6 +672,8 @@ fmt.Println(msg)
 Great! But this is just the tip of the iceberg...so make sure to check out the go doc for `fmt` package.
 
 For those who are coming from C/C++ background, this should feel natural, but if you're coming from, let's say Python or JavaScript, this might be a little strange at first. But it is very powerful and you'll see this functionality used quite extensively.
+
+[Back to top](#Table-of-contents)
 
 # Flow Control
 
@@ -860,6 +868,8 @@ func main() {
 	}
 }
 ```
+
+[Back to top](#Table-of-contents)
 
 # Functions
 
@@ -1128,6 +1138,8 @@ So, Defer is incredibly useful and is commonly used for doing cleanup or error h
 
 Functions can also be used with generics but we will discuss them later in the course.
 
+[Back to top](#Table-of-contents)
+
 # Modules
 
 In this tutorial, we will learn about modules.
@@ -1234,6 +1246,8 @@ After the `go mod vendor` command is executed, a `vendor` directory will be crea
     │           └── ...
     └── modules.txt
 ```
+
+[Back to top](#Table-of-contents)
 
 # Packages
 
@@ -1356,6 +1370,8 @@ Also, make sure to check out the go doc of packages you install, which is usuall
 
 Lastly, I will add that, Go doesn't have a particular _"folder structure"_ convention, always try to organize your packages in a simple and intuitive way.
 
+[Back to top](#Table-of-contents)
+
 # Workspaces
 
 In this tutorial, we will learn about multi-module workspaces that were introduced in Go 1.18.
@@ -1470,6 +1486,8 @@ I can do whatever!! Hello Workspace
 ```
 
 _This is a very underrated feature from Go 1.18 but it is quite useful in certain circumstances._
+
+[Back to top](#Table-of-contents)
 
 # Useful Commands
 
@@ -1596,6 +1614,8 @@ Here's an example of how to use it:
 ```bash
 $ CGO_ENABLED=0 go build -o app
 ```
+
+[Back to top](#Table-of-contents)
 
 # Pointers
 
@@ -1811,6 +1831,8 @@ This brings us to the million-dollar question, why do we need pointers?
 Well, there's no definite answer for that, and pointers are just another useful feature that helps us mutate our data efficiently without copying a large amount of data.
 
 Lastly, I will add that if you are coming from a language with no notion of pointers, don't panic and try to form a mental model of how pointers work.
+
+[Back to top](#Table-of-contents)
 
 # Structs
 
@@ -2238,6 +2260,9 @@ func main() {
 }
 ```
 
+[Back to top](#Table-of-contents)
+
+
 # Methods
 
 Let's talk about methods, sometimes also known as function receivers.
@@ -2375,6 +2400,8 @@ One thing I can think of right now is that methods can help us avoid naming conf
 Since a method is tied to a particular type, we can have the same method names for multiple receivers.
 
 But in the end, it might just come down to preference, such as _"method calls are much easier to read and understand than function calls"_ or the other way around.
+
+[Back to top](#Table-of-contents)
 
 # Arrays and Slices
 
@@ -2876,6 +2903,8 @@ func add(values ...int) int {
 }
 ```
 
+[Back to top](#Table-of-contents)
+
 # Maps
 
 So, Go provides a built-in map type, and we'll learn how to use it.
@@ -3163,6 +3192,8 @@ func main() {
 	fmt.Println(m2) // Output: map[a:{Peter} b:{Seth} c:{Steve}]
 }
 ```
+
+[Back to top](#Table-of-contents)
 
 # Interfaces
 
@@ -3565,6 +3596,8 @@ With that, we covered interfaces in Go.
 
 It's a really powerful feature, but remember, _"Bigger the interface, the weaker the abstraction"_ - Rob Pike.
 
+[Back to top](#Table-of-contents)
+
 # Errors
 
 In this tutorial, let's talk about error handling.
@@ -3840,6 +3873,8 @@ So earlier, we learned that the idiomatic way of handling abnormal conditions in
 
 In those cases, we can use the built-in `panic` function.
 
+[Back to top](#Table-of-contents)
+
 ## Panic
 
 ```go
@@ -3937,6 +3972,8 @@ For example, reading a configuration file which is important to start the progra
 - **Developer error**
 
 This is the most common situation. For example, dereferencing a pointer when the value is `nil` will cause a panic.
+
+[Back to top](#Table-of-contents)
 
 # Testing
 
@@ -4228,6 +4265,8 @@ fuzz: elapsed: 0s, execs: 1 (25/sec), new interesting: 0 (total: 0)
 
 I think this is a really cool feature of Go 1.18. You can learn more about fuzz testing from the [official Go blog](https://go.dev/doc/fuzz).
 
+[Back to top](#Table-of-contents)
+
 # Generics
 
 In this section, we will learn about Generics which is a much awaited feature that was released with Go version 1.18.
@@ -4459,6 +4498,8 @@ Lastly, I will add that while generics are a great addition to the language, the
 
 And, it is advised to start simple and only write generic code once we have written very similar code at least 2 or 3 times.
 
+[Back to top](#Table-of-contents)
+
 # Concurrency
 
 In this lesson, we will learn about concurrency which is one of the most powerful features of Go.
@@ -4563,6 +4604,8 @@ Starvation happens when a process is deprived of necessary resources and is unab
 
 Starvation can happen because of deadlocks or inefficient scheduling algorithms for processes. In order to solve starvation, we need to employ better resource-allotment algorithms that make sure that every process gets its fair share of resources.
 
+[Back to top](#Table-of-contents)
+
 # Goroutines
 
 In this lesson, we will learn about Goroutines.
@@ -4638,6 +4681,8 @@ There we go, we can see our complete output now.
 **Okay, so this works but it's not ideal. So how do we improve this?**
 
 Well, the most tricky part about using goroutines is knowing when they will stop. It is important to know that goroutines run in the same address space, so access to shared memory must be synchronized.
+
+[Back to top](#Table-of-contents)
 
 # Channels
 
@@ -4880,6 +4925,8 @@ func main() {
 }
 ```
 
+[Back to top](#Table-of-contents)
+
 # Select
 
 In this tutorial, we will learn about the `select` statement in Go.
@@ -4969,6 +5016,8 @@ func main() {
 	close(two)
 }
 ```
+
+[Back to top](#Table-of-contents)
 
 # Sync Package
 
@@ -5631,6 +5680,8 @@ Here, `atomic.AddInt32` guarantees that the result of `n` will be 1000 as the in
 $ go run main.go
 Result: 1000
 ```
+
+[Back to top](#Table-of-contents)
 
 # Advanced Concurrency Patterns
 
@@ -6352,6 +6403,8 @@ Handler complete
 I'm sure you can already see how this can be immensely useful.
 
 For example, we can use this to cancel any resource-intensive work if it's no longer needed or has exceeded the deadline or a timeout.
+
+[Back to top](#Table-of-contents)
 
 # Next Steps
 
